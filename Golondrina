@@ -1,0 +1,10 @@
+Class Golondrina {
+
+ int energia;
+
+ public void comer(int unaCantidadDeComida){
+   this.energia = this.energia + unaCantidadDeComida
+ }
+
+
+}
