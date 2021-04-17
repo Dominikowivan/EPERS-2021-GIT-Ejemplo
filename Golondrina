@@ -9,6 +9,21 @@ Class Golondrina {
    this.energia = this.energia + unaCantidadDeComida
  }
 
+
+/// PAra volar como precondicion una golondrina
+// tiene que poder tener la energia necesaria para moverse
+
+ public void volar(string unaLocacion, int kilometrosDeDistancia){
+    if (energia > kilometrosDeDistancia)
+        this.locacion = unaLocacion
+         this.energia = this.energia - kilometrosDeDistancia
+    else
+        throw NosePuedeMoverALocacion(unaLocacion)
+ }
+
+ public void cambiarDeEstado(string estado){
+    this.estado = estado
+ }
   public void equipar(string unArma){
     this.arma = unArma
   }
