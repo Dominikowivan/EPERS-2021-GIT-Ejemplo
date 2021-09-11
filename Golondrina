@@ -32,4 +32,8 @@ Class Golondrina {
     this.mana = this.mana - unaCantidadDeMana
   }
 
+  public void nadar(string unaLocacion, int kilometrosDeDistancia ){
+     this.locacion = unaLocacion
+  }
+
 }
